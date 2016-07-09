@@ -1,0 +1,7 @@
+default['kibana']['version'] = "3.1.1"
+default['kibana']['root_dir'] = "/usr/local"
+default['kibana']['link_dir'] = "/usr/local"
+default['kibana']['src']['file'] = "kibana-#{node['kibana']['version']}.tar.gz"
+default['kibana']['src']['url'] = "https://download.elasticsearch.org/kibana/kibana/#{node['kibana']['src']['file']}"
+default['kibana']['elasticsearch']['port'] = "9200"
+default['kibana']['elasticsearch']['uri'] = "http://\"+window.location.hostname+\":#{node['elasticsearch']['port']}"
